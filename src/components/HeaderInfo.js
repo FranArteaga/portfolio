@@ -18,19 +18,19 @@ export default function HeaderInfo() {
                     JavaScript / Reactjs / Nodejs / Nextjs / Bootstrap / TailwindCSS </p>
                 <div className='md:w-[50%] py-6 flex justify-around items-center'>
                     <Link href={GithubLink}>
-                        <BsGithub className='text-[2.5em]' />
+                        <BsGithub className='text-[2.5em] hover:text-indigo-600 duration-500' />
                     </Link>
                     <Link href={LinkedinLink}>
-                        <BsLinkedin className='text-[2.5em]' />
+                        <BsLinkedin className='text-[2.5em] hover:text-indigo-600 duration-500' />
                     </Link>
-                    <button className='text-white text-sm font-bold p-[.72em] bg-black rounded-md'>
-                        My Resume
+                    <button className='text-white text-sm font-bold p-[.72em] bg-black rounded-md hover:bg-indigo-600 duration-500' >
+                        <p className='r'>My Resume</p>
                     </button>
                 </div>
             </section>
 
             <section className='md:w-[50%] grid'>
-                <img src="./office.png" className='md:w-[70%] place-self-center' />
+                <img src="./office.png" className='w-[70%] place-self-center' />
             </section>
 
         </header>
