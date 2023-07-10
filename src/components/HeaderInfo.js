@@ -7,9 +7,9 @@ export default function HeaderInfo() {
     const GithubLink = 'https://github.com/FranArteaga'
     const LinkedinLink = 'https://www.linkedin.com/in/cfran-arteaga/'
     return (
-        <header className='w-full md:flex md:pt-4 md:px-10'>
+        <header className='w-full md:flex md:pt-4 '>
 
-            <section className='md:w-[50%] p-6' >
+            <section className='md:w-[50%] py-6' >
                 <h1 className='text-[2.5em] font-bold py-1'>Francisco Arteaga</h1>
                 <h4 className='text-2xl font-medium'>FullStack Developer</h4>
                 <p className='text-xl py-4 text-gray-600 leading-loose'>

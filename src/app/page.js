@@ -14,9 +14,11 @@ export default function Home() {
   return (
     <>
       <main className={poppins.className}>
-        <Navbar />
-        <HeaderInfo />
-        <SkillsSection/>
+          <Navbar />
+        <div className='md:px-16'>
+          <HeaderInfo />
+          <SkillsSection />
+        </div>
       </main>
     </>
   )
