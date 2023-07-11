@@ -13,56 +13,69 @@ import { BiLogoGithub } from 'react-icons/bi'
 
 export default function SkillsSection() {
   return (
-    <section className='h-[100vh] flex pt-20'>
+    <section className='h-[100vh] md:flex pt-20'>
 
-      <section className='w-[50%] grid place-self-center'>
-        <img src="./coding.png" className='w-[70%]  ' />
+      <section className='md:w-[50%] grid '>
+        <img src="./coding.png" className='w-[70%] place-self-center ' />
       </section>
 
-      <section className='w-[50%] grid place-self-center'>
-        <h2 className=' text-[2em] font-sm'>
-          Skills and knowledge
-        </h2>
-        <p>
-          FullStack Developer open to work with new technologies
-        </p>
-        <ul className='text-[4rem] py-8 grid grid-cols-4 gap-4 place-content-around '>
-          <li>
-            <BiLogoHtml5 />
-          </li>
-          <li>
-            <BiLogoCss3 />
-          </li>
-          <li>
-            <DiSass />
-          </li>
-          <li>
-            <BiLogoJavascript />
-          </li>
-          <li>
-            <FaBootstrap />
-          </li>
-          <li>
-            <BiLogoTailwindCss />
-          </li>
-          <li>
-            <BiLogoReact />
-          </li>
-          <li>
-            <SiNextdotjs />
-          </li>
-          <li>
-            <BiLogoNodejs />
-          </li>
-          <li>
-            <BiLogoMongodb />
-          </li>
-          <li>
-            <BiLogoGithub />
-          </li>
-        </ul>
-        <p>Experience with building responsive web applications</p>
-        <p>Experience with building responsive web applications</p>
+      <section className='md:w-[50%] grid place-self-center'>
+        <div>
+          <h2 className=' text-[2em] font-sm'>
+            Skills and knowledge
+          </h2>
+          <p>
+            FullStack Developer open to work with new technologies
+          </p>
+          <ul className='text-[4rem] py-8 grid grid-cols-4 gap-4 place-items-center text-center '>
+            <li>
+              <BiLogoHtml5 />
+              <p className='text-sm'>a</p>
+            </li>
+            <li>
+              <BiLogoCss3 />
+              <p className='text-sm'>a</p>
+            </li>
+            <li>
+              <DiSass />
+              <p className='text-sm'>a</p>
+            </li>
+            <li>
+              <FaBootstrap />
+              <p className='text-sm'>a</p>
+            </li>
+            <li>
+              <BiLogoJavascript />
+              <p className='text-sm'>a</p>
+            </li>
+            <li>
+              <BiLogoReact />
+              <p className='text-sm'>a</p>
+            </li>
+            <li>
+              <SiNextdotjs />
+              <p className='text-sm'>a</p>
+            </li>
+            <li>
+              <BiLogoTailwindCss />
+              <p className='text-sm'>a</p>
+            </li>
+            <li>
+              <BiLogoNodejs />
+              <p className='text-sm'>a</p>
+            </li>
+            <li>
+              <BiLogoMongodb />
+              <p className='text-sm'>a</p>
+            </li>
+            <li>
+              <BiLogoGithub />
+              <p className='text-sm'>a</p>
+            </li>
+          </ul>
+          <p>Experience with building responsive web applications</p>
+          <p>Experience with building responsive web applications</p>
+        </div>
       </section>
 
     </section>
