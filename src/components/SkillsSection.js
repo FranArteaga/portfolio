@@ -15,8 +15,8 @@ export default function SkillsSection() {
   return (
     <section className='h-[100vh] md:flex pt-20'>
 
-      <section className='invisible sm:visible  md:w-[50%] md:grid '>
-        <img src="./coding.png" className='md:w-[70%] md:place-self-center ' />
+      <section className=' md:w-[50%] grid flex'>
+        <img src="./coding.png" className='hidden md:flex w-[70%] place-self-center ' />
       </section>
 
       <section className='md:w-[50%] grid place-self-center'>
@@ -75,6 +75,9 @@ export default function SkillsSection() {
           </ul>
 
         </div>
+      </section>
+      <section className='py-4 grid flex md:hidden'>
+        <img src="./coding.png" className='w-[70%] place-self-center ' />
       </section>
 
     </section>
