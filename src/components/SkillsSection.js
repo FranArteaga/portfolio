@@ -13,7 +13,7 @@ import { BiLogoGithub } from 'react-icons/bi'
 
 export default function SkillsSection() {
   return (
-    <section className='h-[100vh] md:flex pt-20'>
+    <section className='h-[100vh] md:flex pt-20 md:pt-0'>
 
       <section className=' md:w-[50%] grid flex'>
         <img src="./coding.png" className='hidden md:flex w-[70%] place-self-center ' />
@@ -24,10 +24,10 @@ export default function SkillsSection() {
           <h2 className=' text-[2em]'>
             Skills and knowledge
           </h2>
-          <p className='py-2'>
-            FullStack Developer specialized in FrontEnd and open to work with new technologies.
+          <p className='py-2 text-xl text-gray-600 leading-loose'>
+            FullStack Developer specialized in FrontEnd and open to work with new tools and technologies.
           </p>
-          <ul className='text-[4rem] py-8 grid grid-cols-4 gap-4 place-items-center text-center '>
+          <ul className='text-[4rem] text-gray-600 py-4 grid grid-cols-4 gap-4 place-items-center text-center '>
             <li className='hover:text-orange-600 duration-300'>
               <BiLogoHtml5 />
               <p className='text-sm'>Html5</p>
@@ -52,7 +52,7 @@ export default function SkillsSection() {
               <BiLogoReact />
               <p className='text-sm'>React</p>
             </li>
-            <li  className='hover:text-zinc-700 duration-300'>
+            <li  className='hover:text-zinc-900 duration-300'>
               <SiNextdotjs />
               <p className='text-sm'>Next.js</p>
             </li>
@@ -68,7 +68,7 @@ export default function SkillsSection() {
               <BiLogoMongodb />
               <p className='text-sm'>MongoDB</p>
             </li>
-            <li  className='hover:text-gray-400 duration-300'>
+            <li  className='hover:text-gray-800 duration-300'>
               <BiLogoGithub />
               <p className='text-sm'>GitHub</p>
             </li>
