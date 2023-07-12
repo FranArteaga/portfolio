@@ -40,11 +40,11 @@ export default function SkillsSection() {
               <DiSass />
               <p className='text-sm'>Sass</p>
             </li>
-            <li className='hover:text-violet-700 duration-300'>
+            <li className='hover:text-violet-700 duration-300 grid place-items-center'>
               <FaBootstrap />
               <p className='text-sm'>Bootstrap</p>
             </li>
-            <li className='hover:text-amber-400 duration-300'>
+            <li className='hover:text-amber-400 duration-300 grid place-items-center'>
               <BiLogoJavascript />
               <p className='text-sm'>JavaScript</p>
             </li>
@@ -52,11 +52,11 @@ export default function SkillsSection() {
               <BiLogoReact />
               <p className='text-sm'>React</p>
             </li>
-            <li  className='hover:text-zinc-900 duration-300'>
+            <li  className='hover:text-black duration-300'>
               <SiNextdotjs />
               <p className='text-sm'>Next.js</p>
             </li>
-            <li className='hover:text-sky-400 duration-300'>
+            <li className='hover:text-sky-400 duration-300 grid place-items-center'>
               <BiLogoTailwindCss  />
               <p className='text-sm'>Tailwind CSS</p>
             </li>
@@ -64,11 +64,11 @@ export default function SkillsSection() {
               <BiLogoNodejs />
               <p className='text-sm'>Node.js</p>
             </li>
-            <li  className='hover:text-green-600 duration-300'>
+            <li  className='hover:text-green-600 duration-300 grid place-items-center'>
               <BiLogoMongodb />
               <p className='text-sm'>MongoDB</p>
             </li>
-            <li  className='hover:text-gray-800 duration-300'>
+            <li  className='hover:text-zinc-900 duration-300'>
               <BiLogoGithub />
               <p className='text-sm'>GitHub</p>
             </li>
