@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import HeaderInfo from '@/components/HeaderInfo'
 import { Poppins } from '@next/font/google'
 import SkillsSection from '@/components/SkillsSection'
+import ProjectsSection from '@/components/ProjectsSection'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -18,6 +19,7 @@ export default function Home() {
         <div className='md:px-16 px-8'>
           <HeaderInfo />
           <SkillsSection />
+          <ProjectsSection/>
         </div>
       </main>
     </>
