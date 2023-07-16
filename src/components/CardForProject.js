@@ -2,13 +2,15 @@ import React from 'react'
 import Link from 'next/link'
 import { BiLinkExternal } from 'react-icons/bi';
 import { AiFillGithub } from 'react-icons/ai';
+import ImageSlider from './ImageSlider';
 
 export default function CardForProject() {
   return (
     <div className='md:flex bg-zinc-100 rounded-md drop-shadow-lg'>
 
         <section className='md:w-[55%] p-4 md:p-8 grid'>
-         <img src="./toknow-landing.png" className='rounded-md md:place-self-center drop-shadow-md'/>
+         {/* <img src="./images/toknow-landing.png" className='rounded-md md:place-self-center drop-shadow-md'/> */}
+         <ImageSlider/>
         </section>
         
         <section className='md:w-[45%] p-8 pt-2 md:p-8'>

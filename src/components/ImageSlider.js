@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
 import { RxDotFilled } from 'react-icons/rx'
+import toknowImage1 from '../../public//images/toknow-landing.png'
+import toknow2 from '../../public/images/toknow-landing.png'
 
 export default function ImageSlider() {
     const slides = [
         {
-            url: "https://upload.wikimedia.org/wikipedia/commons/e/e0/PlaceholderLC.png"
+            url:'../../images/toknow-landing.png'
         },
         {
             url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png"
@@ -32,27 +34,18 @@ export default function ImageSlider() {
     }
 
     return (
-        <div className='max-w-[1080px] h-[720px] w-full m-auto py-16 px-4 relative group '>
-            <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='w-full h-full rounded-2xl bg-center bg-cover duration-300'>
+        <div className=' relative group '>
+            <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='w-full h-full md:place-self-center rounded-2xl  bg-cover duration-300'>
 
-                <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 -translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+                <div className='hidden group-hover:block absolute top-[45%] -translate-x-0 left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
                     <BsChevronCompactLeft onClick={prevSlide} />
                 </div>
-                <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 -translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+                <div className='hidden group-hover:block absolute top-[45%] -translate-x-0 right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
                     <BsChevronCompactRight onClick={nextSlide} />
                 </div>
             </div>
 
-                <div className='flex top-4 justify-center py-2'>
-                    {slides.map((slide, slideIndex) => (
-                        <div 
-                        key={slideIndex} 
-                        onClick={() => goToSlide(slideIndex) } 
-                        className='text-xl cursor-pointer'>
-                            <RxDotFilled/>
-                        </div>
-                    ))}
-                </div>   
+
         </div>
     )
 }

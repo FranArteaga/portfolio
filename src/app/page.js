@@ -21,7 +21,6 @@ export default function Home() {
           <HeaderInfo />
           <SkillsSection />
           <ProjectsSection/>
-          <ImageSlider/>
         </div>
       </main>
     </>
