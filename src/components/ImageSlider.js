@@ -10,10 +10,16 @@ export default function ImageSlider() {
             url:'../../images/toknow-landing.png'
         },
         {
-            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png"
+            url: '../../images/toknow-groups1.png'
         },
         {
-            url: "https://queretaro.tecnm.mx/wp-content/uploads/2021/11/placeholder.png"
+            url: '../../images/toknow-groups2.png'
+        },
+        {
+            url: '../../images/toknow-announce1.png'
+        },
+        {
+            url: '../../images/toknow-comments1.png'
         },
     ]
 
