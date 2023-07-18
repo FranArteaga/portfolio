@@ -40,8 +40,8 @@ export default function ImageSlider() {
     }
 
     return (
-        <div className=' relative group '>
-            <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='w-full h-full md:place-self-center rounded-2xl  bg-cover duration-300'>
+        <div className='min-w-[9em] min-h-[10em] sm:min-h-[14em] relative group '>
+            <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='w-full h-full md:place-self-center rounded-2xl bg-center  bg-cover duration-300'>
 
                 <div className='hidden group-hover:block absolute top-[45%] -translate-x-0 left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
                     <BsChevronCompactLeft onClick={prevSlide} />
