@@ -14,16 +14,19 @@ export default function Navbar() {
   return (
     <>
 
-      <div className='shadow-md w-full fixed top-0 left-0'>
-        <div className='flex items-center justify-between bg-white py-4 md:px-10 px-7'>
-          <div className='text-xl cursor-pointer flex items-center  text-gray-800'>
+      <div className='z-[1] mb-12 shadow-md w-full fixed'>
+
+        <div className='flex items-center justify-between bg-white py-4 md:px-10 px-8'>
+
+          <Link href='#' className='text-xl'>
             Francisco Arteaga
-          </div>
-          <div onClick={()=>setOpen(!open)} className='text-3xl flex items-center right-8 top-6 cursor-pointer md:hidden'>
+          </Link>
+
+          <div onClick={()=>setOpen(!open)} className='text-3xl cursor-pointer md:hidden'>
             <FiMenu/>
           </div>
 
-          <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in-out  ${open ? 'top-12 opacity-100': 'top-[-500px]' } `}>
+          <ul className={`shadow-md md:shadow-none md:flex md:items-center md:pb-0 pb-4 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-10 transition-all duration-300 ease-in-out  ${open ? 'top-12 opacity-100': 'top-[-500px]' } `}>
             {
               arrLinks.map((aLink) => (
                 <li key={aLink.name} className='md:ml-8 text-xl md:my-0 my-5'>
@@ -33,8 +36,8 @@ export default function Navbar() {
               ))
             }
           </ul>
-        </div>
 
+        </div>
       </div>
       {/* <navbar className="z-index-[1] drop-shadow-md fixed w-full text-xl bg-white p-5 md:flex md:items-center md:justify-between ">
 
