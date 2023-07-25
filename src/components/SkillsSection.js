@@ -13,7 +13,7 @@ import { BiLogoGithub } from 'react-icons/bi'
 
 export default function SkillsSection() {
   return (
-    <section className='h-[100vh] md:flex pt-20 md:pt-0'>
+    <section id="section-Skills" className='h-[100vh] md:flex pt-20 md:pt-0'>
 
       <section className=' md:w-[50%] grid flex'>
         <img src="./coding.png" className='hidden md:flex w-[70%] place-self-center ' />

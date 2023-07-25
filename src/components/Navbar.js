@@ -5,9 +5,9 @@ import { FiMenu } from 'react-icons/fi'
 export default function Navbar() {
 
   let arrLinks = [
-    { name: 'Skills', link: '/' },
-    { name: 'Projects', link: '/' },
-    { name: 'Hobbies', link: '/' },
+    { name: 'Skills', link: '#section-Skills' },
+    { name: 'Projects', link: '#section-Project' },
+    // { name: 'Hobbies', link: '/' },
     { name: 'Contact', link: '/' },
   ]
   let [open, setOpen] = useState(false)
