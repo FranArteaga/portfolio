@@ -30,7 +30,7 @@ export default function HeaderInfo() {
             </section>
 
             <section className='md:w-[50%] md:place-self-center'>
-                <div className=' flex justify-center pt-12 md:pt-0'>
+                <div className=' flex justify-center pt-8 md:pt-0'>
                     <img src="./office.png" className='w-[70%]  ' />
                 </div>
             </section>
