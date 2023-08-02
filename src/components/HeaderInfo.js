@@ -7,13 +7,13 @@ export default function HeaderInfo() {
     const GithubLink = 'https://github.com/FranArteaga'
     const LinkedinLink = 'https://www.linkedin.com/in/cfran-arteaga/'
     return (
-        <header className='w-full md:flex md:pt-4 '>
+        <header className=' md:h-[100vh] w-full md:flex'>
 
-            <section className='md:w-[50%] py-6' >
+            <section className='md:w-[50%] md:place-self-center' >
                 <h1 className='text-[2.5em] font-bold py-1'>Francisco Arteaga</h1>
                 <h4 className='text-2xl font-medium'>FullStack Developer</h4>
                 <p className='text-xl py-4 text-gray-600 leading-loose'>
-                    Proactive and passionate web developer.
+                    Proactive and resourceful web developer.
                     Experienced in building Web applications with
                     JavaScript / Reactjs / Nodejs / Nextjs / Bootstrap / TailwindCSS </p>
                 <div className='md:w-[50%] py-6 flex justify-around items-center'>
@@ -29,8 +29,10 @@ export default function HeaderInfo() {
                 </div>
             </section>
 
-            <section className='md:w-[50%] grid'>
-                <img src="./office.png" className='w-[70%] place-self-center' />
+            <section className='md:w-[50%] md:place-self-center'>
+                <div className=' flex justify-center pt-8 md:pt-0'>
+                    <img src="./office.png" className='w-[70%]  ' />
+                </div>
             </section>
 
         </header>

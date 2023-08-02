@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <>
 
-      <div className='z-[1] mb-12 shadow-md w-full fixed'>
+      <div className='z-[1] shadow-md w-full fixed'>
 
         <div className='flex items-center justify-between bg-white py-4 md:px-10 px-8'>
 
