@@ -11,16 +11,21 @@ export default function ContactCard(props) {
         email: <HiOutlineMail/>,
         linkedin: <AiOutlineLinkedin/>,
     }
-
+    const netMap ={
+        Email: <Link href="mailto:franrtg96@gmail.com" 
+        className='hover:text-indigo-500 duration-300'>franrtg96@gmail.com</Link>,
+        Linkedin: <Link href="https://www.linkedin.com/in/cfran-arteaga/" 
+        className='hover:text-indigo-500 duration-300'>Profile</Link>,
+    }
     return (
         <div className='pb-5'>
             <div className=' p-6 border-2 rounded-3xl shadow-md flex items-center gap-4'>
-                <div className='text-[3em]'>
+                <div className='text-[3.5em]'>
                     {iconMap[cardIcon]}
                 </div>
                 <div>
                     <p className='font-bold'>{cardTitle}</p>
-                    <p className='text-gray-600'>{cardInfo}</p>
+                    <p className='text-gray-600'>{netMap[cardTitle] ? netMap[cardTitle] : cardInfo }</p>
                 </div>
             </div>
         </div>
