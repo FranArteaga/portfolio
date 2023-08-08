@@ -1,18 +1,21 @@
 import React from 'react'
-import { TfiLocationPin,TfiEmail } from 'react-icons/tfi'
-import { BsLinkedin} from 'react-icons/bs'
+import Link from 'next/link'
+import { TiLocationOutline } from 'react-icons/ti'
+import { HiOutlineMail} from 'react-icons/hi'
+import { AiOutlineLinkedin} from 'react-icons/ai'
 export default function ContactCard(props) {
     const { cardIcon, cardTitle, cardInfo } = props
 
     const iconMap = {
-        location: <TfiLocationPin />,
-        email: <TfiEmail/>,
-        linkedin: <BsLinkedin/>,
+        location: <TiLocationOutline />,
+        email: <HiOutlineMail/>,
+        linkedin: <AiOutlineLinkedin/>,
     }
+
     return (
-        <div>
-            <div className='w-[15em] p-6 border-2 rounded-3xl shadow-xl flex'>
-                <div className='text-[3em]  hover:text-indigo-600 duration-700'>
+        <div className='pb-5'>
+            <div className=' p-6 border-2 rounded-3xl shadow-md flex items-center gap-4'>
+                <div className='text-[3em]'>
                     {iconMap[cardIcon]}
                 </div>
                 <div>
