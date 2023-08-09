@@ -6,6 +6,7 @@ import { Poppins } from '@next/font/google'
 import SkillsSection from '@/components/SkillsSection'
 import ProjectsSection from '@/components/ProjectsSection'
 import ImageSlider from '@/components/ImageSlider'
+import ContactSection from '@/components/ContactSection'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -21,6 +22,7 @@ export default function Home() {
           <HeaderInfo />
           <SkillsSection />
           <ProjectsSection/>
+          <ContactSection/>
         </div>
       </main>
     </>

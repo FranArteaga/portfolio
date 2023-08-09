@@ -8,7 +8,7 @@ export default function Navbar() {
     { name: 'Skills', link: '#section-Skills' },
     { name: 'Projects', link: '#section-Project' },
     // { name: 'Hobbies', link: '/' },
-    { name: 'Contact', link: '/' },
+    { name: 'Contact', link: '#section-Contact' },
   ]
   let [open, setOpen] = useState(false)
   return (
