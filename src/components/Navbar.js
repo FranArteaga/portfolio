@@ -18,7 +18,7 @@ export default function Navbar() {
 
         <div className='flex items-center justify-between bg-white py-5 md:px-12 px-8'>
 
-          <Link href='' className='text-xl font-semibold hover:text-indigo-600 duration-300'>
+          <Link href='' onClick={()=>setOpen(!open)} className='text-xl font-semibold hover:text-indigo-600 duration-300'>
             Francisco Arteaga
           </Link>
 

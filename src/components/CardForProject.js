@@ -21,14 +21,14 @@ export default function CardForProject() {
             create scholar or group announcements and allow teachers 
             and parents to see them and commentate. </p>
             <div className='pt-4 flex justify-center md:justify-end gap-8 items-end  '>
-                <Link href="https://github.com/to-know-g19/TOKNOW_FE" className='font-medium hover:text-indigo-600 duration-300 flex items-center gap-2'>
+                <a href="https://github.com/to-know-g19/TOKNOW_FE" className='font-medium hover:text-indigo-600 duration-300 flex items-center gap-2'>
                     Repository
                     <AiFillGithub className='text-[2em]'/>
-                </Link >
-                <Link href="https://toknow.online/" className='font-medium hover:text-indigo-600 duration-300 flex items-center gap-2'>
+                </a >
+                <a href="https://toknow.online/" className='font-medium hover:text-indigo-600 duration-300 flex items-center gap-2'>
                     Page
                     <BiLinkExternal className='text-[2em]'/>
-                </Link >
+                </a >
             </div>
         </section>
         
