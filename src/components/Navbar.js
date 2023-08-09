@@ -18,7 +18,7 @@ export default function Navbar() {
 
         <div className='flex items-center justify-between bg-white py-4 md:px-10 px-8'>
 
-          <Link href='#' className='text-xl'>
+          <Link href='' className='text-xl'>
             Francisco Arteaga
           </Link>
 
