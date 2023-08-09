@@ -18,7 +18,7 @@ export default function Navbar() {
 
         <div className='flex items-center justify-between bg-white py-5 md:px-12 px-8'>
 
-          <Link href='' className='text-xl font-semibold'>
+          <Link href='' className='text-xl font-semibold hover:text-indigo-600 duration-300'>
             Francisco Arteaga
           </Link>
 
@@ -30,7 +30,7 @@ export default function Navbar() {
             {
               arrLinks.map((aLink) => (
                 <li key={aLink.name} className='md:ml-8 text-xl md:my-0 my-5'>
-                  <Link href={aLink.link} onClick={()=>setOpen(!open)} className='hover:text-indigo-500 duration-300'>{aLink.name}</Link>
+                  <Link href={aLink.link} onClick={()=>setOpen(!open)} className='hover:text-indigo-600 duration-300'>{aLink.name}</Link>
                 </li>
               ))
             }
