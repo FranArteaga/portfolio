@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import { TbBrandGithub } from 'react-icons/tb'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import { HiOutlineMail} from 'react-icons/hi'
@@ -19,15 +18,15 @@ export default function HeaderInfo() {
                     Experienced in building Web applications with
                     JavaScript / Reactjs / Nodejs / Nextjs / Bootstrap / TailwindCSS </p>
                 <div className='md:w-[50%] py-4 flex justify-around items-center'>
-                    <Link href={GithubLink}>
+                    <a href={GithubLink}>
                         <TbBrandGithub className='border-2 p-2 rounded-full  text-[4em] hover:text-indigo-600 duration-500' />
-                    </Link>
-                    <Link href={LinkedinLink}>
+                    </a>
+                    <a href={LinkedinLink}>
                         <AiOutlineLinkedin className='border-2 p-2 rounded-full  text-[4em] hover:text-indigo-600 duration-500' />
-                    </Link>
-                    <Link href={Email}>
+                    </a>
+                    <a href={Email}>
                         <HiOutlineMail className='border-2 p-2 rounded-full  text-[4em] hover:text-indigo-600 duration-500' />
-                    </Link>
+                    </a>
                     {/* <button className='text-white text-sm font-bold p-[.72em] bg-black rounded-md hover:bg-indigo-600 duration-500' >
                         <p>My Resume</p>
                     </button> */}
