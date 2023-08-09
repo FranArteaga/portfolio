@@ -30,7 +30,7 @@ export default function Navbar() {
             {
               arrLinks.map((aLink) => (
                 <li key={aLink.name} className='md:ml-8 text-xl md:my-0 my-5'>
-                  <Link href={aLink.link} className='hover:text-indigo-500 duration-300'>{aLink.name}</Link>
+                  <Link href={aLink.link} onClick={()=>setOpen(!open)} className='hover:text-indigo-500 duration-300'>{aLink.name}</Link>
                 </li>
               ))
             }
