@@ -21,13 +21,13 @@ export default function SkillsSection() {
 
       <section className='md:w-[50%] grid place-self-center'>
         <div>
-          <h2 className=' text-[2em]'>
+          <h2 className='font-bold text-[2em]'>
             Skills and knowledge
           </h2>
-          <p className='py-2 text-xl text-gray-600 leading-loose'>
+          <p className='py-1 text-xl text-gray-600 leading-loose'>
             FullStack Developer specialized in FrontEnd and open to work with new tools and technologies.
           </p>
-          <ul className='text-[4rem] text-gray-600 py-4 grid grid-cols-4 gap-4 place-items-center text-center '>
+          <ul className='text-[3.5rem] text-gray-600 py-2 grid grid-cols-4 gap-3 place-items-center text-center '>
             <li className='hover:text-orange-600 duration-300'>
               <BiLogoHtml5 />
               <p className='text-sm'>Html5</p>
