@@ -1,31 +1,36 @@
 import React from 'react'
 import Link from 'next/link'
-import { BsGithub } from 'react-icons/bs'
-import { BsLinkedin } from 'react-icons/bs'
+import { TbBrandGithub } from 'react-icons/tb'
+import { AiOutlineLinkedin } from 'react-icons/ai'
+import { HiOutlineMail} from 'react-icons/hi'
 
 export default function HeaderInfo() {
     const GithubLink = 'https://github.com/FranArteaga'
     const LinkedinLink = 'https://www.linkedin.com/in/cfran-arteaga/'
+    const Email = 'mailto:franrtg96@gmail.com'
     return (
         <header className=' md:h-[100vh] w-full md:flex'>
 
             <section className='md:w-[50%] md:place-self-center' >
-                <h1 className='text-[2.5em] font-semibold py-1'>Hey there, I'm Fran</h1>
+                <h1 className='pt-4 sm:pt-0 text-[2.5em] font-bold py-1'>Hey there, I'm Francisco</h1>
                 <h4 className='text-2xl font-medium'>FullStack Developer</h4>
                 <p className='text-xl py-4 text-gray-600 leading-loose'>
                     A proactive and resourceful web developer.
                     Experienced in building Web applications with
                     JavaScript / Reactjs / Nodejs / Nextjs / Bootstrap / TailwindCSS </p>
-                <div className='md:w-[50%] py-6 flex justify-around items-center'>
+                <div className='md:w-[50%] py-4 flex justify-around items-center'>
                     <Link href={GithubLink}>
-                        <BsGithub className='text-[2.5em] hover:text-indigo-600 duration-500' />
+                        <TbBrandGithub className='border-2 p-2 rounded-full  text-[4em] hover:text-indigo-600 duration-500' />
                     </Link>
                     <Link href={LinkedinLink}>
-                        <BsLinkedin className='text-[2.5em] hover:text-indigo-600 duration-500' />
+                        <AiOutlineLinkedin className='border-2 p-2 rounded-full  text-[4em] hover:text-indigo-600 duration-500' />
                     </Link>
-                    <button className='text-white text-sm font-bold p-[.72em] bg-black rounded-md hover:bg-indigo-600 duration-500' >
-                        <p className='r'>My Resume</p>
-                    </button>
+                    <Link href={Email}>
+                        <HiOutlineMail className='border-2 p-2 rounded-full  text-[4em] hover:text-indigo-600 duration-500' />
+                    </Link>
+                    {/* <button className='text-white text-sm font-bold p-[.72em] bg-black rounded-md hover:bg-indigo-600 duration-500' >
+                        <p>My Resume</p>
+                    </button> */}
                 </div>
             </section>
 
