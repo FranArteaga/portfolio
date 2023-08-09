@@ -16,9 +16,9 @@ export default function Navbar() {
 
       <div className='z-[1] shadow-md w-full fixed'>
 
-        <div className='flex items-center justify-between bg-white py-4 md:px-10 px-8'>
+        <div className='flex items-center justify-between bg-white py-5 md:px-12 px-8'>
 
-          <Link href='#' className='text-xl'>
+          <Link href='' className='text-xl font-semibold hover:text-indigo-600 duration-300'>
             Francisco Arteaga
           </Link>
 
@@ -26,11 +26,11 @@ export default function Navbar() {
             <FiMenu/>
           </div>
 
-          <ul className={`shadow-md md:shadow-none md:flex md:items-center md:pb-0 pb-4 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-10 transition-all duration-300 ease-in-out  ${open ? 'top-12 opacity-100': 'top-[-500px]' } `}>
+          <ul className={`font-medium shadow-md md:shadow-none md:flex md:items-center md:pb-0 pb-4 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-10 transition-all duration-300 ease-in-out  ${open ? 'top-12 opacity-100': 'top-[-500px]' } `}>
             {
               arrLinks.map((aLink) => (
                 <li key={aLink.name} className='md:ml-8 text-xl md:my-0 my-5'>
-                  <Link href={aLink.link} className='hover:text-indigo-500 duration-300'>{aLink.name}</Link>
+                  <Link href={aLink.link} onClick={()=>setOpen(!open)} className='hover:text-indigo-600 duration-300'>{aLink.name}</Link>
                 </li>
               ))
             }
