@@ -13,9 +13,9 @@ export default function ContactCard(props) {
     }
     const netMap ={
         Email: <Link href="mailto:franrtg96@gmail.com" 
-        className='hover:text-indigo-500 duration-300'>franrtg96@gmail.com</Link>,
+        className='hover:text-indigo-600 duration-300'>franrtg96@gmail.com</Link>,
         Linkedin: <Link href="https://www.linkedin.com/in/cfran-arteaga/" 
-        className='hover:text-indigo-500 duration-300'>Profile</Link>,
+        className='hover:text-indigo-600 duration-300'>Profile</Link>,
     }
     return (
         <div className='pb-5'>
