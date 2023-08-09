@@ -21,7 +21,7 @@ export default function SkillsSection() {
 
       <section className='md:w-[50%] grid place-self-center'>
         <div>
-          <h2 className=' text-[2em]'>
+          <h2 className='font-bold text-[2em]'>
             Skills and knowledge
           </h2>
           <p className='py-2 text-xl text-gray-600 leading-loose'>
