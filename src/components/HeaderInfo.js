@@ -12,7 +12,7 @@ export default function HeaderInfo() {
         <header className=' md:h-[100vh] w-full md:flex'>
 
             <section className='md:w-[50%] md:place-self-center' >
-                <h1 className='pt-4 sm:pt-0 text-[2.5em] font-bold py-1'>Hey there, I'm Francisco</h1>
+                <h1 className='pt-4 sm:pt-0 text-[2.5em] font-bold py-1'>Hey there, I am Francisco</h1>
                 <h4 className='text-2xl font-medium'>FullStack Developer</h4>
                 <p className='text-xl py-4 text-gray-600 leading-loose'>
                     A proactive and resourceful web developer.
