@@ -10,10 +10,10 @@ export default function HeaderInfo() {
         <header className=' md:h-[100vh] w-full md:flex'>
 
             <section className='md:w-[50%] md:place-self-center' >
-                <h1 className='text-[2.5em] font-bold py-1'>Francisco Arteaga</h1>
+                <h1 className='text-[2.5em] font-semibold py-1'>Hey there, I'm Fran</h1>
                 <h4 className='text-2xl font-medium'>FullStack Developer</h4>
                 <p className='text-xl py-4 text-gray-600 leading-loose'>
-                    Proactive and resourceful web developer.
+                    A proactive and resourceful web developer.
                     Experienced in building Web applications with
                     JavaScript / Reactjs / Nodejs / Nextjs / Bootstrap / TailwindCSS </p>
                 <div className='md:w-[50%] py-6 flex justify-around items-center'>
