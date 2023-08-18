@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import { TiLocationOutline } from 'react-icons/ti'
 import { HiOutlineMail} from 'react-icons/hi'
 import { AiOutlineLinkedin} from 'react-icons/ai'
@@ -25,7 +24,7 @@ export default function ContactCard(props) {
                 </div>
                 <div>
                     <p className='font-bold'>{cardTitle}</p>
-                    <p className='text-gray-600'>{netMap[cardTitle] ? netMap[cardTitle] : cardInfo }</p>
+                    <p className='min-w-[8em] text-gray-600'>{netMap[cardTitle] ? netMap[cardTitle] : cardInfo }</p>
                 </div>
             </div>
         </div>
